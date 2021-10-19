@@ -1,0 +1,20 @@
+# lsit of microservices
+microservices:
+  -app: user-authentication
+    port: 9000
+    version: 1.7
+    deployed: True, # on or off, yes or no, False
+  -app: shopping-cart
+    port: 9002
+    # version: 1.9, # you can also add the list in [1.9, 2.0, 2.1]
+    # versions:
+    # -1.9
+    # -2.0
+    # -2.1
+    versions: [1.9, 2.0, 2.1]
+
+microservices:
+  -user-authentication
+  -shopping-cart
+
+

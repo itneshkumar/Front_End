@@ -1,0 +1,11 @@
+multilineString: |
+  this is single line string,
+  that should be all on the line.
+  some other stuff
+
+# if you want to consider the single so pipe replace with the >
+multilineString: >
+  this is the all are
+  single line by default 
+
+

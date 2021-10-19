@@ -1,0 +1,26 @@
+primitive type another is refrence type
+lets learn about the primitive
+string
+Number
+Boolean
+undefined
+null
+// static typed language cann't be changed in future of variable values where as dynamic typed language can be change as per requirement 
+let name='Mosh'; //string Literal
+let age=30; // number literal
+let isApproved=true; //Boolean literal (ture or false)
+let firstName; //these are two variable is called undefined variable
+let firstName=undefined;
+let lastName=null; //null value
+//if you want to reassign in future of any value then null value is play vital role
+let selectColor=null; //in future like red and green
+//This is dynamic language
+
+// let interestRate = .3;
+// interestRate=1;
+// console.log(interestRate);
+//you can reassign but when you use the constant
+const interestRate=2;
+interestRate=3;
+console.log(interestRate);
+//you can show the error cann't again reassign the constant like tupple you can't reassign

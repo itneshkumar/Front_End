@@ -1,0 +1,18 @@
+apiversion: v1
+kind: Pod
+metadata:
+  name: ngnix
+  label: ngnix
+spec: 
+  containers:
+  - name: ngnix-container
+    image: ngnix
+    ports: 
+    - containerPort: 80
+    volumeMounts:
+    - name: ngnix-vol
+    mountPath: /usr/ngnix/html
+  - name: Sidecar-container
+    image: curlimage/curl
+    command: ["bin/sh"]
+    args: ["-c", "echo Hello from the sidecar container; sleep 300"]

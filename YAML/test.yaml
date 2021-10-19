@@ -1,0 +1,6 @@
+microservice: # put the all file in into microservice object
+  # comment
+  app: user-authentication
+  port: 9000
+  # comment
+  version: 1.7
